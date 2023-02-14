@@ -21,7 +21,7 @@ streamlit.dataframe(fruits_to_show)
 
 # Added on 14-Feb-2023
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/'' + "kiwi")
 streamlit.header("Fruityvice Fruit Advice!")
 
 # Normalize JSON response in table form
