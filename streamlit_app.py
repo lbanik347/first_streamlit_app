@@ -40,4 +40,5 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Add the tabular output to dataframe to display on the app 
 streamlit.dataframe(fruityvice_normalized)
 
+from urllib.error import URLError
 import snowflake.connector
