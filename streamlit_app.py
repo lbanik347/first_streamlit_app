@@ -48,11 +48,13 @@ try :
             
 except URLError as e:
     streamlit.error()
-    
-streamlit.write('The user entered ', fruit_choice)
+
+#Commented on 19-Feb (Sun) at 1.04am
+#streamlit.write('The user entered ', fruit_choice)
 
 # don’t run anything past here while we troubleshoot
-streamlit.stop()
+#Commented on 19-Feb (Sun) at 1.04am
+#streamlit.stop()
 
 #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cur = my_cnx.cursor()
@@ -69,7 +71,7 @@ streamlit.stop()
 #streamlit.text(my_data_row)
 
 #my_data_rows = my_cur.fetchall()
-#streamlit.header("The fruit load list contains:")
+streamlit.header("The fruit load list contains:")
 #streamlit.dataframe(my_data_rows)
 
 streamlit.header("The fruit load list contains:")
